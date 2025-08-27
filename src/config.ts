@@ -9,8 +9,8 @@ export const siteConfig = {
     github: "https://github.com/ellenmartin11",
   },
   aboutMe:
-    "I am a current MS Data Science student at the Taglietela College of Engineering (University of New Haven). I previously worked as a Resesarch Technician at the Yale University Rutledge Lab, a cognitive computational psychiatry lab. I am passionate about the applications of artificial intelligence in psychiatric contexts, as well as using advanced data analytic techniques to support non-profit causes such as equity, education and immigration. I am a published author, with first-author publications in the Journal of Interpersonal Violence, and in Psychiatry Research. I have also collaborated on publications in Nature Mental Health, and in Clinical Psychology and Psychotherapy. I have presented at several scientific conferences, including the Computational Psychiatry Conference (2024). Beyond research, I have experience working with clinical populations, including those experiencing symptoms of anxiety and depression. I have also worked with children and families facing interpersonal violence, as well as children with neurodevelopmental challenges.",
-  skills: ["R", "Python", "Matlab", "R", "REDCap", "SPSS"],
+    "I am a current MS Data Science student at the University of New Haven. I previously worked as a Resesarch Technician at the Yale University Rutledge Lab, a cognitive computational psychiatry lab. I am passionate about integrating AI and mental health. I have published in the Journal of Interpersonal Violence, in Psychiatry Research, and have collaborated on publications in Nature Mental Health, and in Clinical Psychology and Psychotherapy. Beyond research, I have experience working with clinical and vulnerable populations.",
+  skills: ["R", "Python", "Matlab", "REDCap", "Working with Children", "Publication"],
   projects: [
     {
       name: "IRIS Move Ahead Project 5-Year Report",
@@ -41,6 +41,15 @@ export const siteConfig = {
     },
   ],
   experience: [
+    {
+      company: "IRIS New Haven",
+      title: "Resettlement and Employment Volunteer ",
+      dateRange: "July 2025 - Present",
+      bullets: [
+        "Assisting with database management and analyzing client demographics and outcomes",
+        "Assisting clients with seeking and obtaining employment",
+      ],
+    },
     {
       company: "Yale University",
       title: "Postgraduate Research Technician",
