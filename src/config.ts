@@ -22,22 +22,57 @@ export const siteConfig = {
       name: "Anxiety alters mood sensitivity to outcomes during risky decision-making",
       description:
         "Research project presented at the Computational Psychiatry Conference (2024) in collaboration with the Yale University Rutledge Lab",
-      link: "",
+      link: "https://ellen-martin.notion.site/Ellen-Martin-s-Portfolio-Website-18128be36b4080c2a1c6ec9fcef621e4?p=1f29b040cd8b4831aa7e39613b4a3faa&pm=c",
       skills: ["Matlab", "R", "Computational Modeling"],
     },
     {
-      name: "Substance Misuse, Executive Function, and Young Adult Intimate Partner Violence: Direct and Indirect Pathways",
+      name: "Language Conceptualizations of Depression",
+      description:
+        "Exploratory research at the Yale Rutledge Lab examining how open-ended text responses to depression questions compare to standardized numerical surveys.",
+      link: "https://ellen-martin.notion.site/Ellen-Martin-s-Portfolio-Website-18128be36b4080c2a1c6ec9fcef621e4?p=3ee00163462a4fac96ac5602efcd02a3&pm=c",
+      skills: ["Matlab", "R", "Computational Modeling"],
+    },
+  ],
+  publications: [
+    {
+      title: "Substance Misuse, Executive Function, and Young Adult Intimate Partner Violence: Direct and Indirect Pathways",
+      authors: "Martin, E. J., Ramos, K. N. L., Modanesi, E., Mayes, L.C., & Stover, C.S. ",
+      journal: "Journal of Interpersonal Violence",
+      year: "2025",
       description:
         "Yale and UCL Masters thesis and published research examining the pathways that contribute to interpersonal violence between young adult dating couples.",
       link: "https://journals.sagepub.com/doi/abs/10.1177/08862605251326641",
       skills: ["R", "Jamovi", "Publication"],
     },
     {
-      name: "Understanding the relationship between loneliness, substance use traits and psychiatric disorders: A genetically informed approach",
+      title: "Understanding the relationship between loneliness, substance use traits and psychiatric disorders: A genetically informed approach",
+      authors: "Martin, E., Scholer, T., Pingault, J.B., & Barkhuizen, W.",
+      journal: "Psychiatry Research",
+      year: "2023",
       description:
         "Undergraduate final year dissertation and publication from UCL. Implemented Genomic Structural Equation Modelling to examine the complexity of relationships between loneliness and mental health traits.",
       link: "https://www.sciencedirect.com/science/article/pii/S0165178123001695",
       skills: ["R", "GWAS", "GenomicSEM", "Publication"],
+    },
+    {
+      title: "Assessing rates and predictors of cannabis-associated psychotic symptoms across observational, experimental and medical research.",
+      authors: "Schoeler, T., Baldwin, J., Martin, E., Barkhuizen, W., & Pingault, J.B.",
+      journal: "Nature Mental Health",
+      year: "2025",
+      description:
+        "Assisted with verifying inclusion of studies for meta-analysis.",
+      link: "https://www.nature.com/articles/s44220-024-00261-x",
+      skills: ["Excel", "Meta-analysis"],
+    },
+    {
+      title: "Comparing in person to telehealth delivery of a family violence intervention.",
+      authors: "Stover, C.S., Holland, M. L., Martin, E., Modanesi, E., Fish, M. C., & Beebe, R.",
+      journal: "Clinical Psychology and Psychotherapy",
+      year: "2024",
+      description:
+        "Conducted literature review and contributed to the introduction and discussion sections of the paper.",
+      link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/cpp.3034",
+      skills: ["Publication", "Literature Review"],
     },
   ],
   experience: [
@@ -108,4 +143,8 @@ export const siteConfig = {
       ],
     },
   ],
+  cv: {
+    link: "/portfolio/cv.pdf",
+    description: "View and download my complete resume in PDF format.",
+  },
 };
