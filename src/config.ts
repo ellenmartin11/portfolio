@@ -24,7 +24,7 @@ export const siteConfig = {
         "Research project presented at the Computational Psychiatry Conference (2024) in collaboration with the Yale University Rutledge Lab",
       link: "https://ellen-martin.notion.site/Ellen-Martin-s-Portfolio-Website-18128be36b4080c2a1c6ec9fcef621e4?p=1f29b040cd8b4831aa7e39613b4a3faa&pm=c",
       skills: ["Matlab", "R", "Computational Modeling"],
-    },
+    }, 
     {
       name: "Language Conceptualizations of Depression",
       description:
