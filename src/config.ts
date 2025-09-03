@@ -17,6 +17,7 @@ export const siteConfig = {
       description:
         "Analysis of five-years worth of data to examine the effectiveness of IRIS' Move Ahead Project for immigrants and refugees, delivered to program donors and sponsors at the end of the grant.",
       skills: ["R", "Excel"],
+      codeLink: "",
     },
     {
       name: "Anxiety alters mood sensitivity to outcomes during risky decision-making",
@@ -24,6 +25,7 @@ export const siteConfig = {
         "Research project presented at the Computational Psychiatry Conference (2024) in collaboration with the Yale University Rutledge Lab",
       link: "https://ellen-martin.notion.site/Ellen-Martin-s-Portfolio-Website-18128be36b4080c2a1c6ec9fcef621e4?p=1f29b040cd8b4831aa7e39613b4a3faa&pm=c",
       skills: ["Matlab", "R", "Computational Modeling"],
+      codeLink: "",
     }, 
     {
       name: "Language Conceptualizations of Depression",
@@ -31,6 +33,7 @@ export const siteConfig = {
         "Exploratory research at the Yale Rutledge Lab examining how open-ended text responses to depression questions compare to standardized numerical surveys.",
       link: "https://ellen-martin.notion.site/Ellen-Martin-s-Portfolio-Website-18128be36b4080c2a1c6ec9fcef621e4?p=3ee00163462a4fac96ac5602efcd02a3&pm=c",
       skills: ["Matlab", "R", "Python", "NLP"],
+      codeLink: "",
     },
   ],
   publications: [
@@ -43,6 +46,7 @@ export const siteConfig = {
         "Yale and UCL Masters thesis and published research examining the pathways that contribute to interpersonal violence between young adult dating couples.",
       link: "https://journals.sagepub.com/doi/abs/10.1177/08862605251326641",
       skills: ["R", "Jamovi", "Publication"],
+      codeLink: "https://github.com/ellenmartin11/prenatal-cocaine-exposure-and-dating-violence",
     },
     {
       title: "Understanding the relationship between loneliness, substance use traits and psychiatric disorders: A genetically informed approach",
@@ -53,6 +57,7 @@ export const siteConfig = {
         "Undergraduate final year dissertation and publication from UCL. Implemented Genomic Structural Equation Modelling to examine the complexity of relationships between loneliness and mental health traits.",
       link: "https://www.sciencedirect.com/science/article/pii/S0165178123001695",
       skills: ["R", "GWAS", "GenomicSEM", "Publication"],
+      codeLink: "https://github.com/ellenmartin11/lone-GenSEM-MR",
     },
     {
       title: "Assessing rates and predictors of cannabis-associated psychotic symptoms across observational, experimental and medical research.",
@@ -63,6 +68,7 @@ export const siteConfig = {
         "Assisted with verifying inclusion of studies for meta-analysis.",
       link: "https://www.nature.com/articles/s44220-024-00261-x",
       skills: ["Excel", "Meta-analysis"],
+      codeLink: "",
     },
     {
       title: "Comparing in person to telehealth delivery of a family violence intervention.",
@@ -73,6 +79,7 @@ export const siteConfig = {
         "Conducted literature review and contributed to the introduction and discussion sections of the paper.",
       link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/cpp.3034",
       skills: ["Publication", "Literature Review"],
+      codeLink: "",
     },
   ],
   experience: [

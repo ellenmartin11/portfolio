@@ -21,8 +21,9 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
           <div class="lg:col-span-8">
             <div class="space-y-8">
               {siteConfig.projects.map((project, index) => {
-                const Component = project.link ? "a" : "div";
-                const linkProps = project.link
+                const isAnchor = Boolean(project.link);
+                const Component = isAnchor ? "a" : "div";
+                const linkProps = isAnchor
                   ? {
                       href: project.link,
                       target: "_blank",
@@ -88,6 +89,55 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                                 {skill}
                               </span>
                             ))}
+                          </div>
+                        )}
+
+                        {project.codeLink && (
+                          <div class="pt-2">
+                            {isAnchor ? (
+                              <button
+                                type="button"
+                                onclick={`window.open('${project.codeLink}', '_blank')`}
+                                class="inline-flex items-center gap-2 text-sm sm:text-base font-medium text-gray-900 hover:text-gray-700"
+                              >
+                                <span>Code</span>
+                                <svg
+                                  class="w-4 h-4"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M7 17L17 7M17 7H7M17 7V17"
+                                  />
+                                </svg>
+                              </button>
+                            ) : (
+                              <a
+                                href={project.codeLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center gap-2 text-sm sm:text-base font-medium text-gray-900 hover:text-gray-700"
+                              >
+                                <span>Code</span>
+                                <svg
+                                  class="w-4 h-4"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M7 17L17 7M17 7H7M17 7V17"
+                                  />
+                                </svg>
+                              </a>
+                            )}
                           </div>
                         )}
                       </div>
