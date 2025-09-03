@@ -9,13 +9,13 @@ export const siteConfig = {
     github: "https://github.com/ellenmartin11",
   },
   aboutMe:
-    "I am a current MS Data Science student at the University of New Haven. I previously worked as a Resesarch Technician at the Yale University Rutledge Lab, a cognitive computational psychiatry lab. I am passionate about integrating AI and mental health. I have published in the Journal of Interpersonal Violence, in Psychiatry Research, and have collaborated on publications in Nature Mental Health, and in Clinical Psychology and Psychotherapy. Beyond research, I have experience working with clinical and vulnerable populations.",
-  skills: ["R", "Python", "Matlab", "REDCap", "Working with Children", "Publication"],
+    "I am a current MS Data Science student at the University of New Haven. I previously worked as a Resesarch Technician at the Yale University Rutledge Lab, a cognitive computational psychiatry lab. With a background in neuroscience and psychology, I am passionate about using rich datasets to improve mental health research and inform clinical practice, particularly as we consider integrating AI into mental health care. In addition to technical data science skills, such as R, Python and Matlab, I have experience working with clinical and vulnerable populations.",
+  skills: ["R", "Python", "Matlab", "REDCap", "SQL", "AWS","Git","Publication"],
   projects: [
     {
       name: "IRIS Move Ahead Project 5-Year Report",
       description:
-        "Analytic report examining the effectiveness of IRIS' Move Ahead Project for immigrants and refugees, delivered to program donors and sponsors at the end of the five-year grant.",
+        "Analysis of five-years worth of data to examine the effectiveness of IRIS' Move Ahead Project for immigrants and refugees, delivered to program donors and sponsors at the end of the grant.",
       skills: ["R", "Excel"],
     },
     {
@@ -30,7 +30,7 @@ export const siteConfig = {
       description:
         "Exploratory research at the Yale Rutledge Lab examining how open-ended text responses to depression questions compare to standardized numerical surveys.",
       link: "https://ellen-martin.notion.site/Ellen-Martin-s-Portfolio-Website-18128be36b4080c2a1c6ec9fcef621e4?p=3ee00163462a4fac96ac5602efcd02a3&pm=c",
-      skills: ["Matlab", "R", "Computational Modeling"],
+      skills: ["Matlab", "R", "Python", "NLP"],
     },
   ],
   publications: [
