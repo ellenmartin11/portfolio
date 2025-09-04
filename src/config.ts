@@ -23,9 +23,9 @@ export const siteConfig = {
       name: "Anxiety alters mood sensitivity to outcomes during risky decision-making",
       description:
         "Research project presented at the Computational Psychiatry Conference (2024) in collaboration with the Yale University Rutledge Lab",
-      link: "https://ellen-martin.notion.site/Ellen-Martin-s-Portfolio-Website-18128be36b4080c2a1c6ec9fcef621e4?p=1f29b040cd8b4831aa7e39613b4a3faa&pm=c",
+      link: "https://ellenmartin11.github.io/anxiety_decision_making/",
       skills: ["Matlab", "R", "Computational Modeling"],
-      codeLink: "",
+      codeLink: "https://ellenmartin11.github.io/anxiety_decision_making/",
     }, 
     {
       name: "Language Conceptualizations of Depression",
