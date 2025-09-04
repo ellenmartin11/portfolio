@@ -15,8 +15,8 @@ export const siteConfig = {
     {
       name: "IRIS Move Ahead Project 5-Year Report",
       description:
-        "Analysis of five-years worth of data to examine the effectiveness of IRIS' Move Ahead Project for immigrants and refugees, delivered to program donors and sponsors at the end of the grant.",
-      skills: ["R", "Excel"],
+        "Analysis of five-years worth of data to examine the effectiveness of an employment and development program for immigrants and refugees, delivered to program donors and sponsors at the end of the grant.",
+      skills: ["R", "Excel", "Stakeholder Reporting", "Data Visualization"],
       codeLink: "",
     },
     {
