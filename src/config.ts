@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Ellen Martin",
   title: "MS Data Science Student",
   description: "Portfolio website of Ellen Martin",
-  accentColor: "#1d4ed8",
+  accentColor: "#B3DEC1",
   social: {
     email: "martin.ellenjane@gmail.com",
     linkedin: "https://linkedin.com/in/martinellenjane",
