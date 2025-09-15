@@ -10,7 +10,7 @@ export const siteConfig = {
   },
   aboutMe:
     "I am a current MS Data Science student at the University of New Haven. I previously worked as a Resesarch Technician at the Yale University Rutledge Lab, a cognitive computational psychiatry lab. With a background in neuroscience and psychology, I am passionate about using rich datasets to improve mental health research and inform clinical practice, particularly as we consider integrating AI into mental health care. In addition to technical data science skills, such as R, Python and Matlab, I have experience working with clinical and vulnerable populations.",
-  skills: ["R", "Python", "Matlab", "REDCap", "SQL", "AWS","Git","Publication"],
+  skills: ["R", "Python", "Matlab", "REDCap", "SQL", "AWS", "Git", "Publication"],
   projects: [
     {
       name: "IRIS Move Ahead Project 5-Year Report",
