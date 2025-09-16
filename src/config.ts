@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/ellenmartin11",
   },
   aboutMe:
-    "I am a current MS Data Science student at the University of New Haven. I previously worked as a Resesarch Technician at the Yale University Rutledge Lab, a cognitive computational psychiatry lab. With a background in neuroscience and psychology, I am passionate about using rich datasets to improve mental health research and inform clinical practice, particularly as we consider integrating AI into mental health care. In addition to technical data science skills, such as R, Python and Matlab, I have experience working with clinical and vulnerable populations.",
+    "I am a current MS Data Science student at the University of New Haven. I previously worked as a Resesarch Technician at the Yale University Rutledge Lab, a cognitive computational psychiatry lab. I am interested in combining my background in neuroscience and psychology with current approaches in data science to improve mental health research and inform clinical practice, particularly as we consider the role AI may play in future mental health care. In addition to technical data science skills, such as R, Python, MATLAB and SQL, I have experience working with clinical and vulnerable populations, and a wide variety of client populations.",
   skills: ["R", "Python", "MATLAB", "REDCap", "SQL", "AWS", "Git", "SPSS", "Publication"],
   projects: [
     {
