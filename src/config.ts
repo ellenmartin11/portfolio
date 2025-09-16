@@ -10,7 +10,7 @@ export const siteConfig = {
   },
   aboutMe:
     "I am a current MS Data Science student at the University of New Haven. I previously worked as a Resesarch Technician at the Yale University Rutledge Lab, a cognitive computational psychiatry lab. With a background in neuroscience and psychology, I am passionate about using rich datasets to improve mental health research and inform clinical practice, particularly as we consider integrating AI into mental health care. In addition to technical data science skills, such as R, Python and Matlab, I have experience working with clinical and vulnerable populations.",
-  skills: ["R", "Python", "Matlab", "REDCap", "SQL", "AWS", "Git", "Publication"],
+  skills: ["R", "Python", "MATLAB", "REDCap", "SQL", "AWS", "Git", "SPSS", "Publication"],
   projects: [
     {
       name: "IRIS Move Ahead Project 5-Year Report",
@@ -32,7 +32,7 @@ export const siteConfig = {
       description:
         "Exploratory research at the Yale Rutledge Lab examining how open-ended text responses to depression questions compare to standardized numerical surveys.",
       link: "https://ellen-martin.notion.site/Ellen-Martin-s-Portfolio-Website-18128be36b4080c2a1c6ec9fcef621e4?p=3ee00163462a4fac96ac5602efcd02a3&pm=c",
-      skills: ["Matlab", "R", "Python", "NLP"],
+      skills: ["Matlab", "R", "Python", "NLP", "Dimension Reduction"],
       codeLink: "",
     },
   ],
@@ -56,7 +56,7 @@ export const siteConfig = {
       description:
         "Undergraduate final year dissertation and publication from UCL. Implemented Genomic Structural Equation Modelling to examine the complexity of relationships between loneliness and mental health traits.",
       link: "https://www.sciencedirect.com/science/article/pii/S0165178123001695",
-      skills: ["R", "GWAS", "GenomicSEM", "Publication"],
+      skills: ["R", "GWAS", "GenomicSEM", "Publication", "Causal Inference"],
       codeLink: "https://github.com/ellenmartin11/lone-GenSEM-MR",
     },
     {
@@ -99,7 +99,9 @@ export const siteConfig = {
       bullets: [
         "Assisted with the collection of behavioral, neuroimaging and smartphone data, in addition to processing and analyzing data",
         "Designed surveys and tasks for a 12-month longitudinal follow-up",
-        "Tracked participation and payments across multiple study arms",
+        "Developed pipelines for cleaning and preprocessing data from the online Gorilla experiment platform",
+        "Improved database systems for tracking participation and payments across multiple study arms",
+        "Collaborated with a team of engineers and developers to improve app experience and data collection",
       ],
     },
     {
@@ -110,6 +112,7 @@ export const siteConfig = {
         "Conducted interviews with participants in the Fathers For Change intervention",
         "Collaborated on data analysis and publications",
         "Analyzed data spanning 30 years to examine pathways contributing to intimate partner violence",
+        "Developed an AWS s3 Bucket and Python pipeline for accessing biobehavioral data collected on smart-watches",
       ],
     },
     {
