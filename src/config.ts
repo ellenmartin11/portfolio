@@ -148,7 +148,7 @@ export const siteConfig = {
       degree: "Bachelor of Science in Psychology",
       dateRange: "2018 - 2021",
       achievements: [
-        "Dean's List Graduate",
+        "Dean's List, First Class Graduate",
         "Nominated for the Undergraduate Project Prize (for outstanding research)",
       ],
     },
