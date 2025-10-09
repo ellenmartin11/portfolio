@@ -141,6 +141,7 @@ export const siteConfig = {
       dateRange: "2021 - 2023",
       achievements: [
         "Graduated with Honors",
+        "Final thesis published in the Journal of Interpersonal Violence",
       ],
     },
     {
@@ -150,6 +151,7 @@ export const siteConfig = {
       achievements: [
         "Dean's List, First Class Graduate",
         "Nominated for the Undergraduate Project Prize (for outstanding research)",
+        "Final thesis published in the Journal of Psychiatry Research",
       ],
     },
   ],
