@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Ellen Martin",
-  title: "MS Data Science Student",
+  title: "MS Data Science Student, MRes Developmental Neuroscience and Psychopathology, BSc Psychology",
   description: "Portfolio website of Ellen Martin",
   accentColor: "#B3DEC1",
   social: {
