@@ -23,7 +23,7 @@ export const siteConfig = {
       name: "Anxiety alters mood sensitivity to outcomes during risky decision-making",
       description:
         "Research project presented at the Computational Psychiatry Conference (2024) in collaboration with the Yale University Rutledge Lab",
-      link: "https://ellenmartin11.github.io/anxiety_decision_making/",
+      link: "/portfolio/Poster Presentation Lab Meeting.pdf",
       skills: ["Matlab", "R", "Computational Modeling"],
       codeLink: "https://ellenmartin11.github.io/anxiety_decision_making/",
     }, 
