@@ -13,11 +13,12 @@ export const siteConfig = {
   skills: ["R", "Python", "MATLAB", "REDCap", "SQL", "AWS", "Git", "SPSS", "Publication"],
   projects: [
     {
-      name: "IRIS Move Ahead Project 5-Year Report",
+      name: "Urban Crash Risk Radar",
       description:
-        "Analysis of five-years worth of data to examine the effectiveness of an employment and development program for immigrants and refugees, delivered to program donors and sponsors at the end of the grant.",
-      skills: ["R", "Excel", "Stakeholder Reporting", "Data Visualization"],
-      codeLink: "",
+        "A web application that allows users to view the predicted risk of car crashes in a given city. The risk score is calculated using an XGBoost machine learning model trained on 8 years of national crash data.",
+      link: "https://urban-crash-risk-radar.vercel.app/",
+      skills: ["Python", "Machine Learning", "Web Development", "Data Visualization", "AWS", "Git"],
+      codeLink: "https://github.com/vibhutirohan/Urban-Crash-Risk-Radar/tree/Ellen-branch",
     },
     {
       name: "Anxiety alters mood sensitivity to outcomes during risky decision-making",
