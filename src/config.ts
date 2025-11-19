@@ -51,7 +51,7 @@ export const siteConfig = {
     },
     {
       title: "Understanding the relationship between loneliness, substance use traits and psychiatric disorders: A genetically informed approach",
-      authors: "Martin, E., Scholer, T., Pingault, J.B., & Barkhuizen, W.",
+      authors: "Martin, E., Schoeler, T., Pingault, J.B., & Barkhuizen, W.",
       journal: "Psychiatry Research",
       year: "2023",
       description:
