@@ -16,7 +16,7 @@ export const siteConfig = {
       name: "Urban Crash Risk Radar",
       description:
         "A web application that allows users to view the predicted risk of car crashes in a given city. The risk score is calculated using an XGBoost machine learning model trained on 8 years of national crash data.",
-      link: "https://urban-crash-risk-radar.vercel.app/",
+      link: "https://crash-risk-radar-2025.s3.us-east-1.amazonaws.com/index.html",
       skills: ["Python", "Machine Learning", "Web Development", "Data Visualization", "AWS", "Git"],
       codeLink: "https://github.com/vibhutirohan/Urban-Crash-Risk-Radar/tree/Ellen-branch",
     },
@@ -27,7 +27,7 @@ export const siteConfig = {
       link: "/portfolio/Poster Presentation Lab Meeting.pdf",
       skills: ["Matlab", "R", "Computational Modeling"],
       codeLink: "https://ellenmartin11.github.io/anxiety_decision_making/",
-    }, 
+    },
     {
       name: "Language Conceptualizations of Depression",
       description:
@@ -160,4 +160,22 @@ export const siteConfig = {
     link: "/portfolio/cv.pdf",
     description: "View and download my complete resume in PDF format.",
   },
+  logos: [
+    {
+      name: "UCL & Anna Freud",
+      src: "/portfolio/logos/ucl-anna-freud.png",
+    },
+    {
+      name: "University of New Haven",
+      src: "/portfolio/logos/unh.png",
+    },
+    {
+      name: "Yale Child Study Center",
+      src: "/portfolio/logos/yale-child-study.png",
+    },
+    {
+      name: "Yale University",
+      src: "/portfolio/logos/yale.png",
+    },
+  ],
 };
