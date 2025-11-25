@@ -29,6 +29,14 @@ export const siteConfig = {
       codeLink: "https://ellenmartin11.github.io/anxiety_decision_making/",
     },
     {
+      name: "Simulating Rodent Learning Using Reinforcement Learning Models",
+      description:
+        "Project submitted for the course DCSI 6612: Introduction to Artificial Intelligence, modelling rodent learning using reinforcement learning models.",
+      link: "https://github.com/ellenmartin11/simulating_mouse_learning_RL",
+      skills: ["Python", "RL", "Computational Modeling", "Artificial Intelligence", "Q-Learning"],
+      codeLink: "https://github.com/ellenmartin11/simulating_mouse_learning_RL",
+    },
+    {
       name: "Language Conceptualizations of Depression",
       description:
         "Exploratory research at the Yale Rutledge Lab examining how open-ended text responses to depression questions compare to standardized numerical surveys.",
