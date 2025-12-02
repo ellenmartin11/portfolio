@@ -44,6 +44,14 @@ export const siteConfig = {
       skills: ["Matlab", "R", "Python", "NLP", "Dimension Reduction"],
       codeLink: "",
     },
+    {
+      name: "PlaylistFit: A Spotify-based Music Recommendation System",
+      description:
+        "Project submitted for the course DCSI 6003: Machine Learning, using Spotify data to train a music recommendation system.",
+      link: "",
+      skills: ["Python", "Machine Learning", "Data Visualization", "Feature Engineering", "Model Evaluation"],
+      codeLink: "",
+    },
   ],
   publications: [
     {
@@ -99,6 +107,7 @@ export const siteConfig = {
       bullets: [
         "Assisting with database management and analyzing client demographics and outcomes",
         "Assisting clients with seeking and obtaining employment",
+        "Delivered workshops on job readiness, workplace etiquette, and resume building",
       ],
     },
     {
