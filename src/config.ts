@@ -13,10 +13,18 @@ export const siteConfig = {
   skills: ["R", "Python", "MATLAB", "REDCap", "SQL", "AWS", "Databricks", "Publication"],
   projects: [
     {
+      name: "HangOuts - Check In and Hang Out!",
+      description:
+        "A web and mobile application (in beta on Google Play Store) that allows users to check in at locations in town and see who will be joining in. This app is part of a passion project, aiming to help people connect and socialize in person. The app is built using Supabase, Flask, Vercel, and Python.",
+      link: "https://newhaven-hangouts.vercel.app/",
+      skills: ["Python", "App Development", "Web Development", "Supabase", "Flask", "Vercel", "Git"],
+      codeLink: "https://github.com/ellenmartin11/newhaven-hangouts",
+    },
+    {
       name: "Urban Crash Risk Radar",
       description:
-        "A web application that allows users to view the predicted risk of car crashes in a given city. The risk score is calculated using an XGBoost machine learning model trained on 8 years of national crash data.",
-      link: "https://crash-risk-radar-2025.s3.us-east-1.amazonaws.com/index.html",
+        "A web application that allows users to view the predicted risk of car crashes in a given city. The risk score is calculated using an XGBoost machine learning model trained on 8 years of national crash data. Achieved a grade of A+.",
+      link: "https://urban-crash-risk-radar.vercel.app/",
       skills: ["Python", "Machine Learning", "Web Development", "Data Visualization", "AWS", "Git"],
       codeLink: "https://github.com/vibhutirohan/Urban-Crash-Risk-Radar/tree/Ellen-branch",
     },
@@ -47,7 +55,7 @@ export const siteConfig = {
     {
       name: "PlaylistFit: A Spotify-based Music Recommendation System",
       description:
-        "Project submitted for the course DCSI 6003: Machine Learning, using Spotify data to train a music recommendation system.",
+        "Project submitted for the course DCSI 6003: Machine Learning, using Spotify data to train a music recommendation system. Achieved a grade of 100%.",
       link: "",
       skills: ["Python", "Machine Learning", "Data Visualization", "Feature Engineering", "Model Evaluation"],
       codeLink: "",
@@ -62,7 +70,7 @@ export const siteConfig = {
       description:
         "Yale and UCL Masters thesis and published research examining the pathways that contribute to interpersonal violence between young adult dating couples.",
       link: "https://journals.sagepub.com/doi/abs/10.1177/08862605251326641",
-      skills: ["R", "Jamovi", "Publication"],
+      skills: ["R", "Jamovi", "Publication", "Longitudinal Analysis"],
       codeLink: "https://github.com/ellenmartin11/prenatal-cocaine-exposure-and-dating-violence",
     },
     {
@@ -167,7 +175,7 @@ export const siteConfig = {
       degree: "Bachelor of Science in Psychology",
       dateRange: "2018 - 2021",
       achievements: [
-        "Dean's List, First Class Graduate",
+        "Dean's List (top 5% of cohort), First Class Graduate",
         "Nominated for the Undergraduate Project Prize (for outstanding research)",
         "Final thesis published in the Journal of Psychiatry Research",
       ],
