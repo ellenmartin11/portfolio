@@ -13,6 +13,14 @@ export const siteConfig = {
   skills: ["R", "Python", "MATLAB", "REDCap", "SQL", "AWS", "Databricks", "Publication"],
   projects: [
     {
+      name: "networker-ai",
+      description:
+        "An AI-powered tools that helps users better understand and navigate their professional network. Built using Google AI Studio, Antigravity, React, Neo4j, Supabase, and Vercel.",
+      link: "https://www.networker-ai.co/",
+      skills: ["React", "AI", "Web Development", "Supabase", "Flask", "Vercel", "Git", "Lovable", "Product Development", "Product Management", "Entrepreneurship"],
+      codeLink: "https://github.com/ellenmartin11/networker-ai",
+    },
+    {
       name: "HangOuts - Check In and Hang Out!",
       description:
         "A web and mobile application (in beta on Google Play Store) that allows users to check in at locations in town and see who will be joining in. This app is part of a passion project, aiming to help people connect and socialize in person. The app is built using Supabase, Flask, Vercel, and Python.",
