@@ -15,7 +15,7 @@ export const siteConfig = {
     {
       name: "networker-ai",
       description:
-        "An AI-powered tools that helps users better understand and navigate their professional network. Built using Google AI Studio, Antigravity, React, Neo4j, Supabase, and Vercel.",
+        "In development: An AI-powered tools that helps users better understand and navigate their professional network. Built using Google AI Studio, Antigravity, React, Neo4j, Supabase, and Vercel.",
       link: "https://www.networker-ai.co/",
       skills: ["React", "AI", "Web Development", "Supabase", "Flask", "Vercel", "Git", "Lovable", "Product Development", "Product Management", "Entrepreneurship"],
       codeLink: "https://github.com/ellenmartin11/networker-ai",
