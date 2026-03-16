@@ -5,6 +5,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasPublications = siteConfig.publications && siteConfig.publications.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const hasAwards = siteConfig.awards && siteConfig.awards.length > 0;
 const hasCV = siteConfig.cv && siteConfig.cv.link;
 ---
 
@@ -66,6 +67,18 @@ const hasCV = siteConfig.cv && siteConfig.cv.link;
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Education
+            </a>
+          </li>
+        )
+      }
+      {
+        hasAwards && (
+          <li>
+            <a
+              href="#awards"
+              class="text-gray-700 hover:text-black transition-colors font-medium"
+            >
+              Awards
             </a>
           </li>
         )

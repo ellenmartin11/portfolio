@@ -69,6 +69,24 @@ export const siteConfig = {
       codeLink: "",
     },
   ],
+  awards: [
+    {
+      title: "Dean's List Graduate",
+      detail: "BSc Psychology 2021, Top 5% of Cohort",
+    },
+    {
+      title: "Undergraduate Project Prize",
+      detail: "BSc Psychology 2021",
+    },
+    {
+      title: "Distinction",
+      detail: "MRes Developmental Neuroscience & Psychopathology 2023",
+    },
+    {
+      title: "Dean's Scholar",
+      detail: "MS Data Science 2025",
+    },
+  ],
   publications: [
     {
       title: "Substance Misuse, Executive Function, and Young Adult Intimate Partner Violence: Direct and Indirect Pathways",

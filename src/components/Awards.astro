@@ -1,0 +1,39 @@
+---
+import { siteConfig } from "../config";
+const hasAwards = siteConfig.awards && siteConfig.awards.length > 0;
+---
+
+{
+  hasAwards && (
+    <section id="awards" class="px-8 sm:px-12 md:px-16 lg:px-24 pb-8 sm:pb-10 md:pb-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+        <div class="lg:col-span-4">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold text-gray-900">
+            Awards
+          </h2>
+          <div
+            class="w-[75px] h-[5px] mt-2 rounded-full"
+            style={`background-color: ${siteConfig.accentColor}`}
+          />
+        </div>
+
+        <div class="lg:col-span-8">
+          <div class="bg-gray-50 rounded-xl border border-gray-200 p-5 sm:p-6">
+            <ul class="space-y-2.5 text-sm sm:text-base text-gray-800">
+              {siteConfig.awards.map((award) => (
+                <li class="flex gap-2">
+                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-gray-400 shrink-0" />
+                  <span>
+                    <span class="font-semibold">{award.title}</span>
+                    {award.detail && <span class="text-gray-600"> — {award.detail}</span>}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
