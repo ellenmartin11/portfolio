@@ -1,10 +1,20 @@
 ---
 import { siteConfig } from "../config";
-const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+const developmentProjects =
+  siteConfig.projects?.filter((p) => p.category === "development") ?? [];
+const researchProjects =
+  siteConfig.projects?.filter((p) => p.category === "research") ?? [];
+
+const hasDevelopment = developmentProjects.length > 0;
+const hasResearch = researchProjects.length > 0;
+
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 ---
 
 {
-  hasProjects && (
+  (hasDevelopment || hasResearch) && (
     <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24">
       <div>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
@@ -18,290 +28,65 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
             />
           </div>
 
-          <div class="lg:col-span-8 space-y-10">
-            {
-              // Product Development Projects
-            }
-            <div class="space-y-4">
-              <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
-                Product Development
-              </h3>
-              <div class="grid gap-6 sm:grid-cols-2">
-                {siteConfig.projects
-                  .filter((project) =>
-                    [
-                      "networker-ai",
-                      "HangOuts - Check In and Hang Out!",
-                      "Urban Crash Risk Radar",
-                      "PlaylistFit: A Spotify-based Music Recommendation System",
-                    ].includes(project.name)
-                  )
-                  .map((project, index) => {
-                    const isAnchor = Boolean(project.link);
-                    const Component = isAnchor ? "a" : "div";
-                    const linkProps = isAnchor
-                      ? {
-                          href: project.link,
-                          target: "_blank",
-                          rel: "noopener noreferrer",
-                        }
-                      : {};
-
-                    return (
-                      <div class="group relative">
-                        <Component
-                          {...linkProps}
-                          class={`block relative p-4 sm:p-6 bg-gray-50 rounded-xl border border-gray-200 transition-all duration-300 ${
-                            project.link
-                              ? "hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
-                              : ""
-                          }`}
-                        >
-                          {project.link && (
-                            <div class="absolute top-4 right-4 w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center bg-gray-900 rounded-full text-white transition-all duration-300 group-hover:bg-gray-700">
-                              <svg
-                                class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="2"
-                                  d="M7 17L17 7M17 7H7M17 7V17"
-                                />
-                              </svg>
-                            </div>
-                          )}
-
-                          <div class="space-y-3">
-                            <div>
-                              <span
-                                class="text-sm font-mono"
-                                style={{ color: siteConfig.accentColor }}
-                              >
-                                P0{index + 1}
-                              </span>
-                              <h4 class="text-lg sm:text-xl font-bold text-gray-900 mt-1">
-                                {project.name}
-                              </h4>
-                            </div>
-
-                            <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
-                              {project.description}
-                            </p>
-
-                            {project.skills && project.skills.length > 0 && (
-                              <div class="flex flex-wrap gap-1.5 pt-1.5">
-                                {project.skills.map((skill) => (
-                                  <span
-                                    class={`px-2.5 py-1 bg-gray-900 text-white rounded-md text-xs sm:text-xs font-medium transition-all duration-300 ${
-                                      project.link ? "group-hover:bg-gray-800" : ""
-                                    }`}
-                                  >
-                                    {skill}
-                                  </span>
-                                ))}
-                              </div>
-                            )}
-
-                            {project.codeLink && (
-                              <div class="pt-1.5">
-                                {isAnchor ? (
-                                  <button
-                                    type="button"
-                                    onclick={`window.open('${project.codeLink}', '_blank')`}
-                                    class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-gray-900 hover:text-gray-700"
-                                  >
-                                    <span>Code</span>
-                                    <svg
-                                      class="w-4 h-4"
-                                      fill="none"
-                                      stroke="currentColor"
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M7 17L17 7M17 7H7M17 7V17"
-                                      />
-                                    </svg>
-                                  </button>
-                                ) : (
-                                  <a
-                                    href={project.codeLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-gray-900 hover:text-gray-700"
-                                  >
-                                    <span>Code</span>
-                                    <svg
-                                      class="w-4 h-4"
-                                      fill="none"
-                                      stroke="currentColor"
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M7 17L17 7M17 7H7M17 7V17"
-                                      />
-                                    </svg>
-                                  </a>
-                                )}
-                              </div>
-                            )}
-                          </div>
-                        </Component>
+          <div class="lg:col-span-8 space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {hasResearch && (
+                <a
+                  href={`${baseUrl}research`}
+                  class="group bg-gray-50 rounded-xl border border-gray-200 p-6 hover:bg-white hover:shadow-xl hover:border-gray-300 transition-all duration-300"
+                >
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <div
+                        class="text-sm font-mono"
+                        style={{ color: siteConfig.accentColor }}
+                      >
+                        R{researchProjects.length.toString().padStart(2, "0")}
                       </div>
-                    );
-                  })}
-              </div>
-            </div>
-
-            {
-              // Research Projects
-            }
-            <div class="space-y-4">
-              <h3 class="text-lg sm:text-xl font-semibold text-gray-900">
-                Research Projects
-              </h3>
-              <div class="grid gap-6 sm:grid-cols-2">
-                {siteConfig.projects
-                  .filter((project) =>
-                    [
-                      "Anxiety alters mood sensitivity to outcomes during risky decision-making",
-                      "Simulating Rodent Learning Using Reinforcement Learning Models",
-                      "Language Conceptualizations of Depression",
-                    ].includes(project.name)
-                  )
-                  .map((project, index) => {
-                const isAnchor = Boolean(project.link);
-                const Component = isAnchor ? "a" : "div";
-                const linkProps = isAnchor
-                  ? {
-                      href: project.link,
-                      target: "_blank",
-                      rel: "noopener noreferrer",
-                    }
-                  : {};
-
-                return (
-                  <div class="group relative">
-                    <Component
-                      {...linkProps}
-                      class={`block relative p-4 sm:p-6 bg-gray-50 rounded-xl border border-gray-200 transition-all duration-300 ${
-                        project.link
-                          ? "hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
-                          : ""
-                      }`}
-                    >
-                      {project.link && (
-                        <div class="absolute top-4 right-4 w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center bg-gray-900 rounded-full text-white transition-all duration-300 group-hover:bg-gray-700">
-                          <svg
-                            class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M7 17L17 7M17 7H7M17 7V17"
-                            />
-                          </svg>
-                        </div>
-                      )}
-
-                      <div class="space-y-3">
-                        <div>
-                          <span
-                            class="text-sm font-mono"
-                            style={{ color: siteConfig.accentColor }}
-                          >
-                            R0{index + 1}
-                          </span>
-                          <h4 class="text-lg sm:text-xl font-bold text-gray-900 mt-1">
-                            {project.name}
-                          </h4>
-                        </div>
-
-                        <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
-                          {project.description}
-                        </p>
-
-                        {project.skills && project.skills.length > 0 && (
-                          <div class="flex flex-wrap gap-1.5 pt-1.5">
-                            {project.skills.map((skill) => (
-                              <span
-                                class={`px-2.5 py-1 bg-gray-900 text-white rounded-md text-xs sm:text-xs font-medium transition-all duration-300 ${
-                                  project.link ? "group-hover:bg-gray-800" : ""
-                                }`}
-                              >
-                                {skill}
-                              </span>
-                            ))}
-                          </div>
-                        )}
-
-                        {project.codeLink && (
-                          <div class="pt-1.5">
-                            {isAnchor ? (
-                              <button
-                                type="button"
-                                onclick={`window.open('${project.codeLink}', '_blank')`}
-                                class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-gray-900 hover:text-gray-700"
-                              >
-                                <span>Code</span>
-                                <svg
-                                  class="w-4 h-4"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M7 17L17 7M17 7H7M17 7V17"
-                                  />
-                                </svg>
-                              </button>
-                            ) : (
-                              <a
-                                href={project.codeLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-gray-900 hover:text-gray-700"
-                              >
-                                <span>Code</span>
-                                <svg
-                                  class="w-4 h-4"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M7 17L17 7M17 7H7M17 7V17"
-                                  />
-                                </svg>
-                              </a>
-                            )}
-                          </div>
-                        )}
-                      </div>
-                    </Component>
+                      <h3 class="text-lg sm:text-xl font-bold text-gray-900 mt-1">
+                        Research / Academic Projects
+                      </h3>
+                      <p class="text-sm sm:text-base text-gray-600 leading-relaxed mt-2">
+                        Psychology and neuroscience work: modelling, experiments, and interpretation.
+                      </p>
+                    </div>
+                    <div class="mt-1 w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center transition-all duration-300 group-hover:bg-gray-700">
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
+                      </svg>
+                    </div>
                   </div>
-                    );
-                  })}
-              </div>
+                </a>
+              )}
+
+              {hasDevelopment && (
+                <a
+                  href={`${baseUrl}development`}
+                  class="group bg-gray-50 rounded-xl border border-gray-200 p-6 hover:bg-white hover:shadow-xl hover:border-gray-300 transition-all duration-300"
+                >
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <div
+                        class="text-sm font-mono"
+                        style={{ color: siteConfig.accentColor }}
+                      >
+                        P{developmentProjects.length.toString().padStart(2, "0")}
+                      </div>
+                      <h3 class="text-lg sm:text-xl font-bold text-gray-900 mt-1">
+                        Data Science / Development Portfolio
+                      </h3>
+                      <p class="text-sm sm:text-base text-gray-600 leading-relaxed mt-2">
+                        Apps and applied ML: products, prototypes, and shipped tools.
+                      </p>
+                    </div>
+                    <div class="mt-1 w-10 h-10 rounded-full bg-gray-900 text-white flex items-center justify-center transition-all duration-300 group-hover:bg-gray-700">
+                      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              )}
             </div>
           </div>
         </div>

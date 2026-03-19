@@ -10,10 +10,11 @@ export const siteConfig = {
   },
   aboutMe:
     "I’m an MS Data Science student and former Yale Rutledge Lab research technician. I build practical ML tools, user-friendly web apps, and publish research in psychiatry and neuroscience. I'm passionate about using AI to improve mental health research and inform clinical care standards.",
-  skills: ["R", "Python", "MATLAB", "REDCap", "SQL", "AWS", "Databricks", "Research Publication","Neural Networks", "AI/ML", "Product Development and Management", "Research Analytics", "Natural Language Processing"],
+  skills: ["R", "Python", "MATLAB", "REDCap", "SQL", "AWS", "Reinforcement Learning", "Databricks", "Research Publication","Neural Networks", "AI/ML", "Product Development and Management", "Research Analytics", "Natural Language Processing", "Developmental Neuroscience", "Psychopathology", "Psychiatric Genetics", "Mental Health", "Clinical Research"],
   projects: [
     {
       name: "networker-ai",
+      category: "development",
       description:
         "In development: An AI-powered tools that helps users better understand and navigate their professional network. Built using Google AI Studio, Antigravity, React, Neo4j, Supabase, and Vercel.",
       link: "https://www.networker-ai.co/",
@@ -22,6 +23,7 @@ export const siteConfig = {
     },
     {
       name: "HangOuts - Check In and Hang Out!",
+      category: "development",
       description:
         "A web and mobile application (in beta on Google Play Store) that allows users to check in at locations in town and see who will be joining in. This app is part of a passion project, aiming to help people connect and socialize in person. The app is built using Supabase, Flask, Vercel, and Python.",
       link: "https://newhaven-hangouts.vercel.app/",
@@ -30,6 +32,7 @@ export const siteConfig = {
     },
     {
       name: "Urban Crash Risk Radar",
+      category: "development",
       description:
         "A web application that allows users to view the predicted risk of car crashes in a given city. The risk score is calculated using an XGBoost machine learning model trained on 8 years of national crash data. Achieved a grade of A+.",
       link: "https://urban-crash-risk-radar.vercel.app/",
@@ -38,6 +41,7 @@ export const siteConfig = {
     },
     {
       name: "Anxiety alters mood sensitivity to outcomes during risky decision-making",
+      category: "research",
       description:
         "Research project presented at the Computational Psychiatry Conference (2024) in collaboration with the Yale University Rutledge Lab",
       link: "/portfolio/Poster Presentation Lab Meeting.pdf",
@@ -46,6 +50,7 @@ export const siteConfig = {
     },
     {
       name: "Simulating Rodent Learning Using Reinforcement Learning Models",
+      category: "research",
       description:
         "Project submitted for the course DCSI 6612: Introduction to Artificial Intelligence, modelling rodent learning using reinforcement learning models.",
       link: "https://github.com/ellenmartin11/simulating_mouse_learning_RL",
@@ -54,6 +59,7 @@ export const siteConfig = {
     },
     {
       name: "Language Conceptualizations of Depression",
+      category: "research",
       description:
         "Exploratory research at the Yale Rutledge Lab examining how open-ended text responses to depression questions compare to standardized numerical surveys.",
       link: "https://ellen-martin.notion.site/Ellen-Martin-s-Portfolio-Website-18128be36b4080c2a1c6ec9fcef621e4?p=3ee00163462a4fac96ac5602efcd02a3&pm=c",
@@ -62,6 +68,7 @@ export const siteConfig = {
     },
     {
       name: "PlaylistFit: A Spotify-based Music Recommendation System",
+      category: "development",
       description:
         "Project submitted for the course DCSI 6003: Machine Learning, using Spotify data to train a music recommendation system. Achieved a grade of 100%.",
       link: "",

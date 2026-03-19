@@ -1,12 +1,18 @@
 ---
 import { siteConfig } from "../config";
-
-const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+const hasResearch =
+  siteConfig.projects?.some((p) => p.category === "research") ?? false;
+const hasDevelopment =
+  siteConfig.projects?.some((p) => p.category === "development") ?? false;
 const hasPublications = siteConfig.publications && siteConfig.publications.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 const hasAwards = siteConfig.awards && siteConfig.awards.length > 0;
 const hasCV = siteConfig.cv && siteConfig.cv.link;
+
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 ---
 
 <header
@@ -17,20 +23,32 @@ const hasCV = siteConfig.cv && siteConfig.cv.link;
     <ul class="flex items-center gap-8 justify-center">
       <li>
         <a
-          href="#about"
+          href={`${baseUrl}#about`}
           class="text-gray-700 hover:text-black transition-colors font-medium"
         >
           About
         </a>
       </li>
       {
-        hasProjects && (
+        hasResearch && (
           <li>
             <a
-              href="#projects"
+              href={`${baseUrl}research`}
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
-              Projects
+              Research
+            </a>
+          </li>
+        )
+      }
+      {
+        hasDevelopment && (
+          <li>
+            <a
+              href={`${baseUrl}development`}
+              class="text-gray-700 hover:text-black transition-colors font-medium"
+            >
+              Data Science
             </a>
           </li>
         )
@@ -39,7 +57,7 @@ const hasCV = siteConfig.cv && siteConfig.cv.link;
         hasPublications && (
           <li>
             <a
-              href="#publications"
+              href={`${baseUrl}#publications`}
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Publications
@@ -51,7 +69,7 @@ const hasCV = siteConfig.cv && siteConfig.cv.link;
         hasExperience && (
           <li>
             <a
-              href="#experience"
+              href={`${baseUrl}#experience`}
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Experience
@@ -63,7 +81,7 @@ const hasCV = siteConfig.cv && siteConfig.cv.link;
         hasEducation && (
           <li>
             <a
-              href="#education"
+              href={`${baseUrl}#education`}
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Education
@@ -75,7 +93,7 @@ const hasCV = siteConfig.cv && siteConfig.cv.link;
         hasAwards && (
           <li>
             <a
-              href="#awards"
+              href={`${baseUrl}#awards`}
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Awards
@@ -87,7 +105,7 @@ const hasCV = siteConfig.cv && siteConfig.cv.link;
         hasCV && (
           <li>
             <a
-              href="#cv"
+              href={`${baseUrl}#cv`}
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               CV
