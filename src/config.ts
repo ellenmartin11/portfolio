@@ -16,7 +16,7 @@ export const siteConfig = {
       name: "networker-ai",
       category: "development",
       description:
-        "In development: An AI-powered tools that helps users better understand and navigate their professional network. Built using Google AI Studio, Antigravity, React, Neo4j, Supabase, and Vercel.",
+        "In development: An AI-powered tool that helps users better understand and navigate their professional network. Built using Google AI Studio, Antigravity, React, Neo4j, Supabase, and Vercel.",
       link: "https://www.networker-ai.co/",
       skills: ["React", "AI", "Web Development", "Supabase", "Flask", "Vercel", "Git", "Lovable", "Product Development", "Product Management", "Entrepreneurship"],
       codeLink: "https://github.com/ellenmartin11/networker-ai",
@@ -36,7 +36,7 @@ export const siteConfig = {
       description:
         "A web application that allows users to view the predicted risk of car crashes in a given city. The risk score is calculated using an XGBoost machine learning model trained on 8 years of national crash data. Achieved a grade of A+.",
       link: "https://urban-crash-risk-radar.vercel.app/",
-      skills: ["Python", "Machine Learning", "Web Development", "Data Visualization", "AWS", "Git"],
+      skills: ["Python", "Machine Learning", "Web Development", "Data Visualization", "AWS", "XGBoost", "Data Wrangling", "Data Engineering"],
       codeLink: "https://github.com/vibhutirohan/Urban-Crash-Risk-Radar/tree/Ellen-branch",
     },
     {
@@ -45,7 +45,7 @@ export const siteConfig = {
       description:
         "Research project presented at the Computational Psychiatry Conference (2024) in collaboration with the Yale University Rutledge Lab",
       link: "/portfolio/Poster Presentation Lab Meeting.pdf",
-      skills: ["Matlab", "R", "Computational Modeling"],
+      skills: ["MATLAB", "R", "Computational Modeling", "Data Cleaning"],
       codeLink: "https://ellenmartin11.github.io/anxiety_decision_making/",
     },
     {
@@ -63,7 +63,7 @@ export const siteConfig = {
       description:
         "Exploratory research at the Yale Rutledge Lab examining how open-ended text responses to depression questions compare to standardized numerical surveys.",
       link: "https://ellen-martin.notion.site/Ellen-Martin-s-Portfolio-Website-18128be36b4080c2a1c6ec9fcef621e4?p=3ee00163462a4fac96ac5602efcd02a3&pm=c",
-      skills: ["Matlab", "R", "Python", "NLP", "Dimension Reduction"],
+      skills: ["MATLAB", "R", "Python", "NLP", "Dimension Reduction", "t-SNE"],
       codeLink: "",
     },
     {
@@ -114,7 +114,7 @@ export const siteConfig = {
       description:
         "Undergraduate final year dissertation and publication from UCL. Implemented Genomic Structural Equation Modelling to examine the complexity of relationships between loneliness and mental health traits.",
       link: "https://www.sciencedirect.com/science/article/pii/S0165178123001695",
-      skills: ["R", "GWAS", "GenomicSEM", "Publication", "Causal Inference"],
+      skills: ["R", "GWAS", "GenomicSEM", "Publication", "Causal Inference", "Mendelian Randomization", "Factor Analysis"],
       codeLink: "https://github.com/ellenmartin11/lone-GenSEM-MR",
     },
     {
@@ -136,7 +136,7 @@ export const siteConfig = {
       description:
         "Conducted literature review and contributed to the introduction and discussion sections of the paper.",
       link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/cpp.3034",
-      skills: ["Publication", "Literature Review"],
+      skills: ["Publication", "Literature Review", "Data Cleaning"],
       codeLink: "",
     },
   ],
