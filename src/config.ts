@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/ellenmartin11",
   },
   aboutMe:
-    "I’m an MS Data Science student and former Yale Rutledge Lab research technician. I build practical ML tools, user-friendly web apps, and publish research in psychiatry and neuroscience. I'm passionate about using AI to improve mental health research and inform clinical care standards.",
+    "I’m an MS Data Science student and former Yale Rutledge Lab research technician. I build practical ML tools, user-friendly web apps, and publish research in psychiatry and neuroscience. I'm passionate about using advanced methods in AI/ML to improve mental health research and inform clinical care standards.",
   skills: ["R", "Python", "MATLAB", "REDCap", "SQL", "AWS", "Reinforcement Learning", "Databricks", "Research Publication","Neural Networks", "AI/ML", "Product Development and Management", "Research Analytics", "Natural Language Processing", "Developmental Neuroscience", "Psychopathology", "Psychiatric Genetics", "Mental Health", "Clinical Research"],
   projects: [
     {
