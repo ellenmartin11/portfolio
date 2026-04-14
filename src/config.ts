@@ -13,6 +13,24 @@ export const siteConfig = {
   skills: ["R", "Python", "MATLAB", "REDCap", "SQL", "AWS", "Reinforcement Learning", "Databricks", "Research Publication","Neural Networks", "AI/ML", "Product Development and Management", "Research Analytics", "Natural Language Processing", "Developmental Neuroscience", "Psychopathology", "Psychiatric Genetics", "Mental Health", "Clinical Research"],
   projects: [
     {
+      name: "Psychiatric Query RAG",
+      category: "development",
+      description:
+        "In development: An RAG system that provides answers to psychiatric questions (diagnostic and treatment suggestions) and navigate their professional network. Built Google Colab, LLaMa and Mistral.",
+      link:"",
+      skills: ["NLP", "LLMs", "HuggingFace", "Colab", "RAG", "Python", "Pretrained Models"],
+      codeLink: "",
+    },
+    {
+      name: "Instance Segmentation (Mask R-CNN) for Study Space Detection",
+      category: "development",
+      description:
+        "Fine-tuning the Mask R-CNN deep learning model to detect students and objects in study spaces around the University of New Haven Campus.",
+      link:"",
+      skills: ["Deep Learning", "Hyperparameter Tuning", "Fine-tuning", "Modeling", "Neural Networks", "Python", "Computer Vision", "Annotation", "Instance Segmentation", "PyTorch"],
+      codeLink: "",
+    },
+    {
       name: "networker-ai",
       category: "development",
       description:
