@@ -28,7 +28,7 @@ export const siteConfig = {
         "Fine-tuning the Mask R-CNN deep learning model to detect students and objects in study spaces around the University of New Haven Campus.",
       link:"",
       skills: ["Deep Learning", "Hyperparameter Tuning", "Fine-tuning", "Modeling", "Neural Networks", "Python", "Computer Vision", "Annotation", "Instance Segmentation", "PyTorch"],
-      codeLink: "",
+      codeLink: "https://github.com/ellenmartin11/Mask-R-CNN-for-Study-Space-Availability-Detection",
     },
     {
       name: "networker-ai",
