@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/ellenmartin11",
   },
   aboutMe:
-    "I’m an MS Data Science student and former Yale Rutledge Lab research technician. I build practical ML tools, user-friendly web apps, and publish research in psychiatry and neuroscience. I'm passionate about using advanced methods in AI/ML to improve mental health research and inform clinical care standards.",
+    "I’m a current Research Assistant at the Yale University Polimanti, and an MS Data Science. I conduct and publish research in psychiatric genetics, developmental neuroscience and psychology. I also build practical ML tools and user-friendly web apps. I'm passionate about using advanced methods in AI/ML to improve mental health research and inform clinical care standards.",
   skills: ["R", "Python", "MATLAB", "REDCap", "SQL", "AWS", "Reinforcement Learning", "Databricks", "Research Publication","Neural Networks", "AI/ML", "Product Development and Management", "Research Analytics", "Natural Language Processing", "Developmental Neuroscience", "Psychopathology", "Psychiatric Genetics", "Mental Health", "Clinical Research"],
   projects: [
     {
@@ -44,7 +44,7 @@ export const siteConfig = {
       category: "development",
       description:
         "A web and mobile application (in beta on Google Play Store) that allows users to check in at locations in town and see who will be joining in. This app is part of a passion project, aiming to help people connect and socialize in person. The app is built using Supabase, Flask, Vercel, and Python.",
-      link: "https://newhaven-hangouts.vercel.app/",
+      link: "",
       skills: ["Python", "App Development", "Web Development", "Supabase", "Flask", "Vercel", "Git"],
       codeLink: "https://github.com/ellenmartin11/newhaven-hangouts",
     },
