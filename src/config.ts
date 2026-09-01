@@ -160,9 +160,18 @@ export const siteConfig = {
   ],
   experience: [
     {
+      company: "Yale Psychiatry (Polimanti Lab)",
+      title: "Postgraduate Research Associate",
+      dateRange: "September 2026 - Present",
+      bullets: [
+        "Big data analytics of multi-omics dataset",
+        "Research presentation and dissemination"
+      ],
+    },
+    {
       company: "IRIS New Haven",
       title: "Resettlement and Employment Volunteer ",
-      dateRange: "July 2025 - Present",
+      dateRange: "July 2025 - June 2026",
       bullets: [
         "Assisting with database management and analyzing client demographics and outcomes",
         "Assisting clients with seeking and obtaining employment",
@@ -170,7 +179,7 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Yale University",
+      company: "Yale Psychology (Rutledge Lab)",
       title: "Postgraduate Research Technician",
       dateRange: "Jun 2023 - December 2024",
       bullets: [
@@ -182,7 +191,7 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Yale University",
+      company: "Yale Child Study Center (Stover Lab)",
       title: "Research Assistant",
       dateRange: "Aug 2022 - Jun 2023",
       bullets: [
