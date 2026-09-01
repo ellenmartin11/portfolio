@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/ellenmartin11",
   },
   aboutMe:
-    "I’m a current Research Assistant at the Yale University Polimanti, and an MS Data Science. I conduct and publish research in psychiatric genetics, developmental neuroscience and psychology. I also build practical ML tools and user-friendly web apps. I'm passionate about using advanced methods in AI/ML to improve mental health research and inform clinical care standards.",
+    "I’m a current Research Assistant at the Yale University Polimanti, and an MS Data Science student. I conduct and publish research in psychiatric genetics, developmental neuroscience and psychology. I also build practical ML tools and user-friendly web apps. I'm passionate about using advanced methods in AI/ML to improve mental health research and inform clinical care standards.",
   skills: ["R", "Python", "MATLAB", "REDCap", "SQL", "AWS", "Reinforcement Learning", "Databricks", "Research Publication","Neural Networks", "AI/ML", "Product Development and Management", "Research Analytics", "Natural Language Processing", "Developmental Neuroscience", "Psychopathology", "Psychiatric Genetics", "Mental Health", "Clinical Research"],
   projects: [
     {
